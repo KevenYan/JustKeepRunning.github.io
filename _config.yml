@@ -133,7 +133,7 @@ baidu_tongji:
   sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: true
-  siteid: id%3D1256664455%26show%3Dpic2   ## e.g. 1253575964 your cnzz tongji site id
+  siteid: 1256664455   ## e.g. 1253575964 your cnzz tongji site id
 
 #### Miscellaneous
 fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
