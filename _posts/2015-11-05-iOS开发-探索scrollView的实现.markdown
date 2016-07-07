@@ -5,7 +5,6 @@ categories: iOS-Dev
 description: UIScrollView滚动视图，绝对算的上是iOS开发中最重要的控件，用来展示多于一个屏幕的内容，可以滚动显示超过屏幕外的内容的特性使其产生了更多强大的子类：UITableView、UICollectionView、UITextView等等。尽管功能如此强大，但是scrollView本质上只是一个UIView的黑魔法，本文将剖析UIScrollView这种强大特性的实现过程。
 ---
 
-##前言
 `UIScrollView`滚动视图，绝对算的上是iOS开发中最重要的控件，用来展示多于一个屏幕的内容，可以滚动显示超过屏幕外的内容的特性使其产生了更多强大的子类：`UITableView、UICollectionView、UITextView`等等。尽管功能如此强大，但是`scrollView`本质上只是一个`UIView`的黑魔法，本文将剖析`UIScrollView`这种强大特性的实现过程
 
 ###图层渲染

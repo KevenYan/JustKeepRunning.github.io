@@ -6,7 +6,6 @@ description: CALayer是iOS开发中视图层次上负责内容展示的关键类
 ---
 
 
-##前言
 先上本文讲述的demo效果图
 
 <span><img src="/images/CALayer的探究应用/1.gif" width="800"></span>
