@@ -6,7 +6,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
 assets: /assets
-baseurl: sindrilin.com
+baseurl: http://sindrilin.com
 
 # pagination
 paginate: 20
