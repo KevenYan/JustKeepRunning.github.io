@@ -79,7 +79,7 @@ mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
-  name: yitao      ## e.g. wuchong Author name
+  name: sindriLin      ## e.g. wuchong Author name
   intro_line1:  "Hello ,I'm Sindri Lin in Shenzhen."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog, to record my study."  ## the 2nd line
   weibo:  2922715753    ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895

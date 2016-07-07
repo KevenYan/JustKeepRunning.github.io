@@ -2,8 +2,8 @@
 layout: post
 title: JavaScript交互
 tags:
-- 混合开发
-categories: iOS开发
+- Hybrid-App
+categories: iOS-Dev
 description: 当前混合开发模式迎来了前所未有的发展，跨平台开发、热更新等优点决定了这种模式的重要地位。虽然前端界面在交互、动效等多方面距离原生应用还有差距，但毫无疑问混合开发只会被越来越多的公司接受。
 ---
 

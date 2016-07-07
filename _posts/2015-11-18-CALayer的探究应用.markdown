@@ -1,8 +1,7 @@
 ---
 layout: post
 title: CALayer的探究应用
-tags:
-categories: iOS开发
+categories: iOS-Dev
 description: CALayer是iOS开发中视图层次上负责内容展示的关键类，它的很多属性可以用来实现动效。
 ---
 

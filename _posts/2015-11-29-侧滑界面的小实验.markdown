@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 侧滑界面的小实验
-tags:
-- 侧滑菜单
-categories: iOS开发
+categories: iOS-Dev
 description: 侧滑菜单是常见的界面需求，但在开发这种业务需求的过程中也常常存在着坑。
 ---
 

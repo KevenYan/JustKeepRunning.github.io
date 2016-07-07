@@ -1,15 +1,7 @@
 ---
 layout: post
-title:  "数据持久化"
-date:   2015-09-11 14:36:23
-categories: iOS-Dev
----
----
-layout: post
 title: 数据持久化
-tags:
-- 数据持久
-categories: iOS开发
+categories: iOS-Dev
 description: 数据持久化是移动端开发必备的知识技术，iOS开发中为开发者提供了多套持久化方案，每一种方案都有自己的优缺点。
 ---
 

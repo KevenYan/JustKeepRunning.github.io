@@ -2,8 +2,8 @@
 layout: post
 title: 定制自己的瀑布流
 tags:
-- 瀑布流
-categories: iOS开发
+- UICollectionView
+categories: iOS-Dev
 description: UICollectionView是一个非常强大的UI控件，在系统原生的照片应用中，就用了这种控件来展示所有相片视频。其自身提供的布局机制让我们可以高度的自定义控件效果以及动画，掌握UICollectionView是一名iOS开发程序员的基础知识。
 ---
 

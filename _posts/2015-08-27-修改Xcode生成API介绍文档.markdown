@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 修改Xcode生成API介绍文档
-categories: 开发笔记
+categories: iOS-Dev
 description: Xcode使用系统宏定义来实现新建文件的注释添加，通过修改这些默认注释格式达到新建类文件自动添加注释命令，增加API文档导出的效率。
 ---
 
