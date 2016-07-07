@@ -2,7 +2,7 @@
 layout: post
 title: KVO的奥秘
 categories: iOS-Dev
-description: `KVO(key-value-observing)`是一种十分有趣的回调机制，在某个对象注册监听者后，在被监听的对象发生改变时，对象会发送一个通知给监听者，以便监听者执行回调操作。
+description: 在iOS开发中，苹果提供了许多机制给我们进行回调。KVO(key-value-observing)是一种十分有趣的回调机制。
 ---
 
 ##前言
