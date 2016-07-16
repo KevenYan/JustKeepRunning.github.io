@@ -78,18 +78,18 @@ description: 当前混合开发模式迎来了前所未有的发展，跨平台�
   - **Blocks**
     自定义的`block`代码可以通过`JSContext`转换成`JS`代码中的函数指针调用，这里存在一个坑就是`Swift`中的闭包无法完成这样的类型转换，因此这种方式的操作流程在`Swift`中是这样的：`Closure` -> `block` -> `function pointer`。在闭包转成`block`的这一过程中，需要使用一个重要的关键符`@convention`
     
-			let stringConvert: @convention(block) (String)->String = {
-				let pinyin = NSMutableString(string: $0) as CFMutableString
-				CFStringTransform(pinyin, nil, kCFStringTransformToLatin, false)
-				CFStringTransform(pinyin, nil, kCFStringTransformStripCombiningMarks, false)
-				return pinyin as String
-			}      
-			   
-			let convertObjc = unsafeBitCast(stringConvert, to: AnyObject.self)
-			context?.setObject(convertObjc, forKeyedSubscript: "convertFunc")
-			let convertFunc = context?.objectForKeyedSubscript("convertFunc")
-			print("林欣达的拼音是\(convertFunc.call(withArguments: ["林欣达"]).toString())")
-	    这时候，只要前端在`JS`的按钮点击代码中调用`convertFunc()`这句代码就会执行这个`closure`中的代码。使用这种方式要注意由于闭包的捕获特性，有可能会导致你的`JSContext`对象被引用而无法被释放，使用`JSContext.current()`获取当前上下文来解决引用问题
+		let stringConvert: @convention(block) (String)->String = {
+			let pinyin = NSMutableString(string: $0) as CFMutableString
+			CFStringTransform(pinyin, nil, kCFStringTransformToLatin, false)
+			CFStringTransform(pinyin, nil, kCFStringTransformStripCombiningMarks, false)
+			return pinyin as String
+		}      
+		   
+		let convertObjc = unsafeBitCast(stringConvert, to: AnyObject.self)
+		context?.setObject(convertObjc, forKeyedSubscript: "convertFunc")
+		let convertFunc = context?.objectForKeyedSubscript("convertFunc")
+		print("林欣达的拼音是\(convertFunc.call(withArguments: ["林欣达"]).toString())")
+这时候，只要前端在`JS`的按钮点击代码中调用`convertFunc()`这句代码就会执行这个`closure`中的代码。使用这种方式要注意由于闭包的捕获特性，有可能会导致你的`JSContext`对象被引用而无法被释放，使用`JSContext.current()`获取当前上下文来解决引用问题
 
   - **JSExport**
     在`JS`中调用`iOS`方法的时候，通过调用`JSExport`的派生协议方法来实现。所有派生协议的方法会自动提供给`JavaScript`代码使用，这个在下面的demo中可以看到 
