@@ -24,8 +24,8 @@ redcarpet:
     - with_toc_data
     
 
-title : kevenyan的小小world
-tagline: Personal blog by Sindri Lin with Jekyll
+title : kevenyan.BLOG
+tagline: Personal blog by kai yan with Jekyll
 
 defaults:
   -
@@ -38,7 +38,7 @@ defaults:
 ##### Menu
 menu:
   Home: /
-  Archives: /archives
+  Archives: /record
   About: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -52,7 +52,7 @@ widgets:
 - category
 - tag
 - links
-- douban
+##- douban
 - rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
 
@@ -79,8 +79,8 @@ mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
-  name: sindriLin      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Sindri Lin in Shenzhen."    ## your introduction on the bottom of the page
+  name: kai yan      ## e.g. wuchong Author name
+  intro_line1:  "Hello guys, welcome !!! come usually."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog, to record my study."  ## the 2nd line
   weibo:  2922715753    ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
@@ -105,9 +105,9 @@ toc:
 
 #### Links
 links:
-  Bison的技术博客: http://allluckly.cn
-  曾诚淳的技术博客: http://parisdog.club
-  熊曾辉的学习博客: http://xiongzenghuidegithub.github.io
+##  Bison的技术博客: http://allluckly.cn
+##  曾诚淳的技术博客: http://parisdog.club
+## 熊曾辉的学习博客: http://xiongzenghuidegithub.github.io
 
 
 
