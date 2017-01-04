@@ -10,17 +10,17 @@ if (page.tag){
   title = page.tag;
   icon = 'tag';
 };
-if (page.archive){
-  icon = 'archive';
+if (page.record){
+  icon = 'record';
   if (page.year) title = page.year+  (page.month ? '/' + page.month : '');
-  else title = __('archive_a');
+  else title = __('record_a');
 };
 %>
 -->
 
-{% if page.type == 'archives' %}
+{% if page.type == 'record' %}
 {% assign title = '归档' %}
-{% assign icon = 'archive' %}
+{% assign icon = 'record' %}
 {% endif %}
 
 {% if page.type == 'categories' %}
@@ -33,10 +33,10 @@ if (page.archive){
 {% assign icon = 'tag' %}
 {% endif %}
 
-<div class="archive-title" >
-  <h2 class="{{ icon }}-icon"><span class='archive-folder'>{{ title }}</span></h2>
-  {% if page.type == 'archives' %}
-  <div class="archiveslist archive-float clearfix">
+<div class="record-title" >
+  <h2 class="{{ icon }}-icon"><span class='record-folder'>{{ title }}</span></h2>
+  {% if page.type == 'record' %}
+  <div class="recordlist record-float clearfix">
     {% assign count = 1 %}
     {% for post in site.posts  %}
     {% capture this_date %}{{ post.date }}{% endcapture %}
@@ -44,10 +44,10 @@ if (page.archive){
     {% capture this_date_str %}{{ this_date | date: "%Y-%m" }}{% endcapture %}
     {% capture next_date_str %}{{ next_date | date: "%Y-%m" }}{% endcapture %}
     {% if this_date_str != next_date_str %}
-    <ul class="archive-list">
-    <li class="archive-list-item">
-    <a class="archive-list-link" href="#{{ this_date | date: "%Y-%m" }}">{{ this_date | date: "%Y 年 %m 月" }}</a>
-    <span class="archive-list-count">{{ count }}</span>
+    <ul class="record-list">
+    <li class="record-list-item">
+    <a class="record-list-link" href="#{{ this_date | date: "%Y-%m" }}">{{ this_date | date: "%Y 年 %m 月" }}</a>
+    <span class="record-list-count">{{ count }}</span>
     {% assign count = 1 %}
     {% else %}
     {% assign count = count | plus: 1 %}
@@ -60,12 +60,12 @@ if (page.archive){
   {% endif %}
   {% if page.type == 'categories' %}
   
-  <ul class="archive-list">
-  <div class="archiveslist archive-float clearfix">
+  <ul class="record-list">
+  <div class="recordlist record-float clearfix">
     {% for category in site.categories  %}
-    <li class="archive-list-item">
-    <a class="archive-list-link" href="#{{ category[0] }}">{{ category[0] }}</a>
-    <span class="archive-list-count">{{ category[1] | size }}</span>
+    <li class="record-list-item">
+    <a class="record-list-link" href="#{{ category[0] }}">{{ category[0] }}</a>
+    <span class="record-list-count">{{ category[1] | size }}</span>
     </li>
     {% endfor %}
  </div>
@@ -74,12 +74,12 @@ if (page.archive){
  
   {% if page.type == 'tags' %}
   
-  <ul class="archive-list">
-  <div class="archiveslist archive-float clearfix">
+  <ul class="record-list">
+  <div class="recordlist record-float clearfix">
     {% for tag in site.tags  %}
-    <li class="archive-list-item">
-    <a class="archive-list-link" href="#{{ tag[0] }}">{{ tag[0] }}</a>
-    <span class="archive-list-count">{{ tag[1] | size }}</span>
+    <li class="record-list-item">
+    <a class="record-list-link" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+    <span class="record-list-count">{{ tag[1] | size }}</span>
     </li>
     {% endfor %}
  </div>
@@ -87,8 +87,8 @@ if (page.archive){
  {% endif %}
  
 </div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
+<div id="main" class="record-part clearfix">
+  <div id="record-page">
   {% for post in site.posts %}
   {% assign item = post %}
   {% assign index = true %}
@@ -96,7 +96,7 @@ if (page.archive){
   {% endfor %}
 <!--
 <% if (page.total > 1){ %>
-  <nav id="page-nav" class="clearfix archive-nav">
+  <nav id="page-nav" class="clearfix record-nav">
     <%- paginator({
       prev_text: '<span></span>Prev',
       next_text: 'Next<span></span>'
