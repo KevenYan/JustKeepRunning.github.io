@@ -6,7 +6,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
 assets: /assets
-baseurl: http://sindrilin.com
+baseurl: http://kevenyan.site
 
 # pagination
 paginate: 20
@@ -24,7 +24,7 @@ redcarpet:
     - with_toc_data
     
 
-title : SindriLin的小巢
+title : kevenyan的小小world
 tagline: Personal blog by Sindri Lin with Jekyll
 
 defaults:
