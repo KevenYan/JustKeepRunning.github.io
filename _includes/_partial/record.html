@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--
 <%
 var title = '';
@@ -106,3 +107,113 @@ if (page.record){
 -->
   </div>
 </div>
+=======
+<!--
+<%
+var title = '';
+var icon = '';
+if (page.category){
+  title = page.category;
+  icon = 'category';
+};
+if (page.tag){
+  title = page.tag;
+  icon = 'tag';
+};
+if (page.record){
+  icon = 'record';
+  if (page.year) title = page.year+  (page.month ? '/' + page.month : '');
+  else title = __('record_a');
+};
+%>
+-->
+
+{% if page.type == 'record' %}
+{% assign title = '归档' %}
+{% assign icon = 'record' %}
+{% endif %}
+
+{% if page.type == 'categories' %}
+{% assign title = '分类' %}
+{% assign icon = 'category' %}
+{% endif %}
+
+{% if page.type == 'tags' %}
+{% assign title = '标签' %}
+{% assign icon = 'tag' %}
+{% endif %}
+
+<div class="record-title" >
+  <h2 class="{{ icon }}-icon"><span class='record-folder'>{{ title }}</span></h2>
+  {% if page.type == 'record' %}
+  <div class="recordlist record-float clearfix">
+    {% assign count = 1 %}
+    {% for post in site.posts  %}
+    {% capture this_date %}{{ post.date }}{% endcapture %}
+    {% capture next_date %}{{ post.previous.date }}{% endcapture %}
+    {% capture this_date_str %}{{ this_date | date: "%Y-%m" }}{% endcapture %}
+    {% capture next_date_str %}{{ next_date | date: "%Y-%m" }}{% endcapture %}
+    {% if this_date_str != next_date_str %}
+    <ul class="record-list">
+    <li class="record-list-item">
+    <a class="record-list-link" href="#{{ this_date | date: "%Y-%m" }}">{{ this_date | date: "%Y 年 %m 月" }}</a>
+    <span class="record-list-count">{{ count }}</span>
+    {% assign count = 1 %}
+    {% else %}
+    {% assign count = count | plus: 1 %}
+    {% endif %}
+        
+    </li>
+    {% endfor %}
+    </ul>
+ </div>
+  {% endif %}
+  {% if page.type == 'categories' %}
+  
+  <ul class="record-list">
+  <div class="recordlist record-float clearfix">
+    {% for category in site.categories  %}
+    <li class="record-list-item">
+    <a class="record-list-link" href="#{{ category[0] }}">{{ category[0] }}</a>
+    <span class="record-list-count">{{ category[1] | size }}</span>
+    </li>
+    {% endfor %}
+ </div>
+ </ul>
+ {% endif %}
+ 
+  {% if page.type == 'tags' %}
+  
+  <ul class="record-list">
+  <div class="recordlist record-float clearfix">
+    {% for tag in site.tags  %}
+    <li class="record-list-item">
+    <a class="record-list-link" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+    <span class="record-list-count">{{ tag[1] | size }}</span>
+    </li>
+    {% endfor %}
+ </div>
+ </ul>
+ {% endif %}
+ 
+</div>
+<div id="main" class="record-part clearfix">
+  <div id="record-page">
+  {% for post in site.posts %}
+  {% assign item = post %}
+  {% assign index = true %}
+  {% include _partial/article_row.html %}
+  {% endfor %}
+<!--
+<% if (page.total > 1){ %>
+  <nav id="page-nav" class="clearfix record-nav">
+    <%- paginator({
+      prev_text: '<span></span>Prev',
+      next_text: 'Next<span></span>'
+    }) %>
+  </nav>
+<% } %>
+-->
+  </div>
+</div>
+>>>>>>> e70a71e229bbc8473c2c721fd71540d1efc062e8
