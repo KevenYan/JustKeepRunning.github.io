@@ -3,7 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+#highlighter: pygments
 
 assets: /assets
 baseurl: http://kevenyan.site
@@ -11,21 +11,25 @@ baseurl: http://kevenyan.site
 # pagination
 paginate: 20
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouges
+
 # Markdown Processors
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - hard_wrap
-    - no_intra_emphasis
-    - autolink
-    - strikethrough
-    - tables
-    - lax_spacing
-    - with_toc_data
+# markdown: redcarpet
+# redcarpet:
+#   extensions:
+#     - hard_wrap
+#     - no_intra_emphasis
+#     - autolink
+#     - strikethrough
+#     - tables
+#     - lax_spacing
+#     - with_toc_data
     
 
-title : kevenyan.BLOG------test
-tagline: Personal blog by kai yan with Jekyll
+title : SindriLin的小巢
+tagline: Personal blog by Sindri Lin with Jekyll
 
 defaults:
   -
@@ -38,7 +42,7 @@ defaults:
 ##### Menu
 menu:
   Home: /
-  Archives--test: /archives
+  Archives: /archives
   About: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -52,7 +56,7 @@ widgets:
 - category
 - tag
 - links
-##- douban
+- douban
 - rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
 
@@ -71,7 +75,7 @@ banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 
 #### index post is expanding or not 
 index:
-  expand: true           ## default is unexpanding,so you can only see the short description of each post.
+  expand: false           ## default is unexpanding,so you can only see the short description of each post.
   excerpt_link: Read More  
 
 close_aside: false  #close sidebar in post page if true
@@ -79,8 +83,8 @@ mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
-  name: kai yan      ## e.g. wuchong Author name
-  intro_line1:  "Hello guys, welcome !!! come usually."    ## your introduction on the bottom of the page
+  name: sindriLin      ## e.g. wuchong Author name
+  intro_line1:  "Hello ,I'm Sindri Lin in Shenzhen."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog, to record my study."  ## the 2nd line
   weibo:  2922715753    ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
@@ -89,7 +93,7 @@ author:
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
   email:  sindrilin@163.com    ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:  https://github.com/JustKeepRunning   ## e.g. wuchong for https://github.com/wuchong
+ # github:  https://github.com/JustKeepRunning   ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
@@ -105,9 +109,9 @@ toc:
 
 #### Links
 links:
-##  Bison的技术博客: http://allluckly.cn
-##  曾诚淳的技术博客: http://parisdog.club
-## 熊曾辉的学习博客: http://xiongzenghuidegithub.github.io
+  Bison的技术博客: http://allluckly.cn
+  曾诚淳的技术博客: http://parisdog.club
+  熊曾辉的学习博客: http://xiongzenghuidegithub.github.io
 
 
 
