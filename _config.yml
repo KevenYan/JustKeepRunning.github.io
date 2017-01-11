@@ -24,7 +24,7 @@ redcarpet:
     - with_toc_data
     
 
-title : kevenyan.BLOG------test
+title : kevenyan会大幅答复.BLOG
 tagline: Personal blog by kai yan with Jekyll
 
 defaults:
@@ -38,7 +38,7 @@ defaults:
 ##### Menu
 menu:
   Home: /
-  Archives--test: /archives
+  Archives: /archives
   About: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
