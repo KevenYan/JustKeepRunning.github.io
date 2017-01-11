@@ -28,7 +28,7 @@ kramdown:
 #     - with_toc_data
     
 
-title : kevenyan会大幅答复.BLOG
+title : kevenyan.BLOG
 tagline: Personal blog by kai yan with Jekyll
 
 defaults:
@@ -42,7 +42,7 @@ defaults:
 ##### Menu
 menu:
   Home: /
-  Archives: /archives
+  Archive: /archives
   About: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
