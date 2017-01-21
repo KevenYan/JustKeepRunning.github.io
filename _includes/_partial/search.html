@@ -1,14 +1,14 @@
-{% if site.google_cse.enable %}
+{% if site.baidu_cse.enable %}
 <div  id="main" class="page">
   <div id='cse' style='width:100%;text-align:center'>正在加载搜索结果，请稍等。</div>
 </div>
-<script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
+<script src="http://www.baidu.com.hk/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
-google.load('search', '1', {language : 'zh-CN',style: google.loader.themes.MINIMALIST});
-google.setOnLoadCallback(function(){
-  var customSearchControl = new google.search.CustomSearchControl('{{ site.google_cse.cx }}');
-  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-  var options = new google.search.DrawOptions();
+baidu.load('search', '1', {language : 'zh-CN',style: baidu.loader.themes.MINIMALIST});
+baidu.setOnLoadCallback(function(){
+  var customSearchControl = new baidu.search.CustomSearchControl('{{ site.baidu_cse.cx }}');
+  customSearchControl.setResultSetSize(baidu.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new baidu.search.DrawOptions();
   options.setAutoComplete(true);
   customSearchControl.draw('cse', options);
   var match = location.search.match(/q=([^&]*)(&|$)/);
