@@ -29,7 +29,7 @@ kramdown:
     
 
 title : kevenyan.BLOG
-tagline: Personal blog by kai yan with Jekyll
+tagline: Personal blog by kai yan 
 
 defaults:
   -
@@ -83,15 +83,15 @@ mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
-  name: sindriLin      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Sindri Lin in Shenzhen."    ## your introduction on the bottom of the page
+  name: Keven      ## e.g. wuchong Author name
+  intro_line1:  "Hello guys,I'm yan kai in Jiangxi."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog, to record my study."  ## the 2nd line
-  weibo:  2922715753    ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo:  5307041178    ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
-  email:  sindrilin@163.com    ## e.g. imjark@gmail.com
+  email:  Keven.Yan@live.com    ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
  # github:  https://github.com/JustKeepRunning   ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
@@ -109,9 +109,9 @@ toc:
 
 #### Links
 links:
-  Bison的技术博客: http://allluckly.cn
-  曾诚淳的技术博客: http://parisdog.club
-  熊曾辉的学习博客: http://xiongzenghuidegithub.github.io
+##  Bison的技术博客: http://allluckly.cn
+##  曾诚淳的技术博客: http://parisdog.club
+##  熊曾辉的学习博客: http://xiongzenghuidegithub.github.io
 
 
 
