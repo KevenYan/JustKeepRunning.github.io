@@ -70,7 +70,7 @@ imglogo:
   src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
 apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
-author_img: img/author.jpeg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
+author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 
 #### index post is expanding or not 
@@ -85,7 +85,7 @@ mathjax: false      #enable mathjax if true
 author:
   name: Keven      ## e.g. wuchong Author name
   intro_line1:  "Hello guys,I'm yan kai in Jiangxi."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog, to record my study."  ## the 2nd line
+  intro_line2:  "This is my blog, to record my study and life."  ## the 2nd line
   weibo:  5307041178    ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
@@ -133,8 +133,8 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: false
-  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  enable: true
+  sitecode: bf2f2e304b325f768a36010a69b4c222 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid: 1256664455   ## e.g. 1253575964 your cnzz tongji site id
