@@ -4,6 +4,7 @@ title: 安卓四大组件之BroadcastReceiver
 tags:
 - Android
 categories: Android四大组件
+
 ---
 # *BroadcastReceiver*  
 ##1 为什么需要广播接收者
