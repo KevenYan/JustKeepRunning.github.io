@@ -117,7 +117,7 @@ links:
 
 #### Comment
 layout: default
-comments: true
+comments: false
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
 disqus_shortname: yankay    ## e.g. wuchong   your disqus short name.
 
